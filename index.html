@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerwash Pro</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8ff;
+    }
+    .navbar {
+      background-color: #1f77b4;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero {
+      background: url('https://irp-cdn.multiscreensite.com/f56fd259/dms3rep/multi/Pressure-Washing+Photo.jpeg') no-repeat center center;
+      background-size: cover;
+      height: 80vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1, .hero p {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .services, .portfolio, .contact {
+      padding: 60px 0;
+    }
+    .services .card, .portfolio .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .services .card:hover, .portfolio .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #1f77b4;
+      color: #fff;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Powerwash Pro</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <div class="hero">
+      <div>
+        <h1>Welcome to Powerwash Pro</h1>
+        <p>Professional Powerwashing Services for Your Home and Business</p>
+      </div>
+    </div>
+  
+    <!-- Services Section -->
+    <div id="services" class="container services">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/service1.jpg" class="card-img-top" alt="Residential Powerwashing">
+            <div class="card-body">
+              <h5 class="card-title">Residential Powerwashing</h5>
+              <p class="card-text">We provide top-notch powerwashing services for your home.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/service2.jpg" class="card-img-top" alt="Commercial Powerwashing">
+            <div class="card-body">
+              <h5 class="card-title">Commercial Powerwashing</h5>
+              <p class="card-text">Our team is equipped to handle large-scale commercial projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/service3.jpg" class="card-img-top" alt="Driveway & Walkway Cleaning">
+            <div class="card-body">
+              <h5 class="card-title">Driveway & Walkway Cleaning</h5>
+              <p class="card-text">Keep your driveways and walkways looking brand new.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="container portfolio">
+      <h2 class="text-center mb-4">Our Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/portfolio1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of project 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/portfolio2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Description of project 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.example.com/portfolio3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Description of project 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contact Form -->
+    <div id="contact" class="container contact">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="text-center">
+      <p>&copy; 2024 Powerwash Pro. All rights reserved.</p>
+      <div>
+        <a href="#" class="mr-2">Facebook</a>
+        <a href="#" class="mr-2">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
